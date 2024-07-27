@@ -21,7 +21,14 @@ class DoDidDoneTheme {
         textStyle: MaterialStateProperty.all(
           const TextStyle(color: Colors.white), // Set text color to white
         ),
+        shadowColor: MaterialStateProperty.all(Colors.grey[400]), // Light gray shadow color
+        elevation: MaterialStateProperty.all(5), // Adjust elevation for shadow size
       ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: Color(0xFF9F7BF6), // Цвет фона BottomNavigationBar
+      selectedItemColor: const Color(0xFF4CEB8B), // Цвет выбранного элемента
+      unselectedItemColor: Color(0xFF4CEB8B).withOpacity(0.5), // Цвет невыбранного элемента
     ),
   );
 }
